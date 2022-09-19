@@ -32,6 +32,7 @@ li {
 main {
     margin: auto;
     padding: 15px;
+    margin-bottom: 15px;
 }
 
 p {
@@ -86,14 +87,6 @@ h2 {
     margin-bottom: 15px;
 }
 
-.fa-info {
-    color: var(--bleu);
-    border: solid var(--gris) 2px;
-    border-radius: 50px;
-    padding: 5px 10px;
-    justify-content: center;
-    margin-right: 10px;
-}
 
 /* ---- bloc recherche ---- */
 
@@ -129,18 +122,28 @@ h2 {
 
 #filtre {
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
 }
 
-#filtre div {
+#filtre h2 {
+    margin-right: 15px;
+    font-size: large;
+}
+
+.conteneur_filtre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.conteneur_filtre div {
     display: flex;
     justify-content: center;
     align-items: center;
     border: solid 2px lightgrey;
     border-radius: 100px;
-    margin: 5px 10px;
+    margin: 5px;
 }
 
 
@@ -162,12 +165,24 @@ h2 {
     font-size: medium;
 }
 
-#filtre div:hover {
+.conteneur_filtre div:hover {
     border: solid 2px var(--bleu);
 }
 
-#filtre div:focus {
-    border: solid 2px var(--bleuclair);
+/* bloc info */
+
+.info {
+    display: flex;
+    align-items: center;
+}
+
+.fa-info {
+    color: var(--bleu);
+    border: solid var(--gris) 2px;
+    border-radius: 50px;
+    padding: 5px 10px;
+    justify-content: center;
+    margin-right: 10px;
 }
 
 /* ---- bloc hebergements et plus populaires ----*/
@@ -177,7 +192,7 @@ h2 {
 
 #hebergements {
     display: flex;
-    gap: 1%;
+    justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 5%;
 }
@@ -221,7 +236,7 @@ h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 7px;
+    padding: 10px;
 }
 
 .carte h3 {
@@ -360,7 +375,7 @@ h2 {
 }
 
 .carte-100 img {
-    height: 450px;
+    height: 444px;
 }
 
 .carte-55 img {
@@ -376,12 +391,13 @@ h2 {
 .activites_marseille .carte h3 {
     min-height: 35px;
 }
+
+
 /* ----- footer et navigation ----- */
 
 footer {
     background-color: var(--gris);
-    padding: 20px 20px 20px 50px;
-    margin: -10px;
+    padding: 20px 50px;
     width: 100%;
 }
 
@@ -396,7 +412,6 @@ footer {
 }
 
 .conteneur_lien h2 {
-    display: block;
     font-size: medium;
     margin-bottom: 0;
 }
@@ -408,3 +423,4 @@ footer {
 .conteneur_lien li {
     padding: 5px 0;
 }
+
