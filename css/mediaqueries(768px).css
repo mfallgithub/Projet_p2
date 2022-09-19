@@ -47,14 +47,14 @@
     /* -------------- main -------------- */
 
     p {
-        font-size: medium
+        font-size: medium;
     }
 
     /* ----- filtres ----- */
 
     #filtre {
         flex-direction: column;
-        align-items: baseline
+        align-items: baseline;
     }
 
     /* bloc populaire */
@@ -118,7 +118,7 @@
     }
 
     .carte-40 img {
-        min-height: 150px
+        min-height: 150px;
     }
 
     /* ------ footer ------ */
