@@ -50,6 +50,22 @@
         font-size: medium;
     }
 
+    #recherche .fa-magnifying-glass {
+        display: initial;
+    }
+
+    .loupe_bleu {
+        background-color: var(--bleu);
+        color: white;
+        padding: 15px;
+        border-radius: 15px;
+        margin-left: -10px;
+    }
+
+    #recherche button {
+        display: none;
+    }
+
     /* ----- filtres ----- */
 
     #filtre {

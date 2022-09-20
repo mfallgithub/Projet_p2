@@ -96,10 +96,14 @@ h2 {
     margin-bottom: 1px;
 }
 
-#recherche i {
+#recherche .fa-location-dot {
     background-color: var(--gris);
     padding: 15px;
     border-radius: 15px 0 0 15px;
+}
+
+#recherche .fa-magnifying-glass {
+    display: none;
 }
 
 #recherche input {
@@ -194,7 +198,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 5%;
+    margin-bottom: 20px;
 }
 
 .conteneur {
@@ -233,6 +237,7 @@ h2 {
 }
 
 .carte aside {
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -287,6 +292,7 @@ h2 {
 }
 
 .hebergements_marseille .carte a {
+    height: 100%;
     flex-direction: column;
 }
 
