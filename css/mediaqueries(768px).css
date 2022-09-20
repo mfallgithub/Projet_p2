@@ -50,6 +50,12 @@
         font-size: medium;
     }
 
+    /* bloc recherche */
+
+    #recherche input {
+        width: 250px;
+    }
+
     #recherche .fa-magnifying-glass {
         display: initial;
     }
