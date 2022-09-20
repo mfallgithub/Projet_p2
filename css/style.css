@@ -6,6 +6,10 @@
     --gris: #f2f2f2;
 }
 
+::placeholder {
+    color: black;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Raleway', 'trebuchet ms', 'sans-serif';
