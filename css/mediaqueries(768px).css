@@ -113,7 +113,7 @@
     .carte-bloc {
         width: 100%;
         flex-direction: column;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         height: 450px;
         gap: 15px;
     }
