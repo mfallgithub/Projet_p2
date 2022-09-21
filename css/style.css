@@ -197,6 +197,7 @@ h2 {
 .info {
     display: flex;
     align-items: center;
+    margin: 15px 0;
 }
 
 .info p {
@@ -253,6 +254,7 @@ h2 {
 
 .carte a {
     display: flex;
+    width: 100%;
 }
 
 .carte img {
