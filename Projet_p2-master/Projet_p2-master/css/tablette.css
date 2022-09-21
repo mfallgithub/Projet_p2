@@ -1,0 +1,52 @@
+@media screen and (max-width: 992px) {
+
+    /* filtre */
+
+    #filtre {
+        align-items: baseline;
+        justify-content: center;
+    }
+
+    /* bloc hebergements */
+
+    #hebergements {
+        flex-direction: column-reverse;
+    }
+    .conteneur {
+        margin-bottom: 20px;
+    }
+
+    .conteneur:nth-child(1) {
+        flex-basis: auto;
+    }
+
+    .conteneur:nth-child(2) {
+        flex-basis: auto;
+    }
+
+    .populaires .carte img {
+        width: 200px;
+    }
+
+    /* bloc hebergements marseille */
+
+    .hebergements_marseille .carte {
+        width: 48%;
+    }
+
+    /* bloc activités */
+    
+    .activites_marseille {
+        flex-direction: row;
+        height: auto;
+        gap: 20px;
+    }
+
+    .carte-100 {
+        flex-basis: 50%;
+    }
+    
+    .carte-bloc {
+        width: 45%;
+    }
+}
