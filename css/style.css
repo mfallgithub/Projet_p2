@@ -10,8 +10,15 @@
     color: black;
 }
 
-* {
+html {
     box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
     font-family: 'Raleway', 'trebuchet ms', 'sans-serif';
 }
 
@@ -40,7 +47,7 @@ main {
 }
 
 p {
-    font-size: small;
+    font-size: medium;
 }
 
 /* ---- header et navigation ---- */
@@ -65,17 +72,18 @@ nav ul {
     display: flex;
 }
 
-nav li {
-    margin-right: 15px;
-}
 
 nav a {
-    padding: 30px;
+    padding: 20px 30px;
 }
 
 nav a:hover {
-    border-top: 3px solid var(--bleu);
+    border-top: 5px solid var(--bleu);
     color: var(--bleu);
+}
+
+nav li {
+    font-size: medium;
 }
 
 /* -------- regles main --------- */
@@ -91,18 +99,23 @@ h2 {
     margin-bottom: 15px;
 }
 
+.titre_page p {
+    margin: 0;
+    font-size: small;
+}
+
 
 /* ---- bloc recherche ---- */
 
 #recherche {
     display: flex;
     align-items: center;
-    margin-bottom: 1px;
+    margin: 20px 0;
 }
 
 #recherche .fa-location-dot {
     background-color: var(--gris);
-    padding: 15px;
+    padding: 16px;
     border-radius: 15px 0 0 15px;
 }
 
@@ -117,6 +130,7 @@ h2 {
 }
 
 #recherche button {
+    cursor: pointer;
     background-color: var(--bleu);
     color: white;
     padding: 15px;
@@ -131,6 +145,7 @@ h2 {
 #filtre {
     display: flex;
     align-items: center;
+    margin: 10px 0;
 }
 
 #filtre h2 {
@@ -169,7 +184,7 @@ h2 {
 
 #filtre p {
     padding: 0 15px;
-    font-weight: bold;
+    font-weight: 700;
     font-size: medium;
 }
 
@@ -182,6 +197,10 @@ h2 {
 .info {
     display: flex;
     align-items: center;
+}
+
+.info p {
+    font-size: small;
 }
 
 .fa-info {
@@ -347,6 +366,10 @@ h2 {
     justify-content: space-between;
 }
 
+#activites h2 {
+    margin: 30px 0;
+}
+
 .activites_marseille {
     display: flex;
     flex-direction: column;
@@ -385,7 +408,7 @@ h2 {
 }
 
 .carte-100 img {
-    height: 444px;
+    min-height: 444px;
 }
 
 .carte-55 img {
